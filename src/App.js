@@ -35,7 +35,7 @@ class App {
   render() {
     return (
       `
-      <div className="App">
+      <div class="App">
         ${
           Header()
         }

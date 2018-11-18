@@ -5,8 +5,8 @@ import './categories.css';
 function Categories(props) {
     return (
         `
-        <div className="categories-wrapper">
-            <div className="categories-inner">
+        <div class="categories-wrapper">
+            <div class="categories-inner">
             ${
                 props.categories.map((category) => (
                     CategoryCard({

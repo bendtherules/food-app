@@ -11,48 +11,48 @@ function toTitleCase(str) {
 export default function RecipeCard(props) {
     return (
         `
-        <div className="recipe-card" >
-            <div className="recipe-card-top">
-                <img className="recipe-card-image" src=${props.recipe.image} alt=${props.recipe.name} />
+        <div class="recipe-card" >
+            <div class="recipe-card-top">
+                <img class="recipe-card-image" src=${props.recipe.image} alt=${props.recipe.name} />
             </div>
-            <div className="recipe-card-bottom">
-                <div className="recipe-card-desc">
-                    <div className="recipe-card-logo-wrapper">
-                        <img className="recipe-card-logo" src=${props.recipe.icon} alt=${props.recipe.name} />
+            <div class="recipe-card-bottom">
+                <div class="recipe-card-desc">
+                    <div class="recipe-card-logo-wrapper">
+                        <img class="recipe-card-logo" src=${props.recipe.icon} alt=${props.recipe.name} />
                     </div>
-                    <div className="recipe-card-title-container">
-                        <div className="recipe-card-title">
+                    <div class="recipe-card-title-container">
+                        <div class="recipe-card-title">
                             ${
                                 toTitleCase(props.recipe.name)
                             }
                         </div>
-                        <div className="recipe-card-rating">
+                        <div class="recipe-card-rating">
                             ${
                                 new Array(props.recipe.rating).map(_useless => (
                                     `
-                                    <div className="recipe-card-star">
+                                    <div class="recipe-card-star">
                                     </div>
                                     `
                                 ))
                             }
                         </div>
                     </div>
-                    <div className="recipe-card-price">
-                        <div className="recipe-card-price-number">
+                    <div class="recipe-card-price">
+                        <div class="recipe-card-price-number">
                             ${
                                 `$${props.recipe.price}`
                             }
                         </div>
-                        <div className="recipe-card-price-suffix">
+                        <div class="recipe-card-price-suffix">
                             Min Order
                         </div>
                     </div>
                 </div>
-                <div className="recipe-card-tags">
+                <div class="recipe-card-tags">
                     ${
                         props.recipe.tags.map(tag => (
                             `
-                            <div className="recipe-card-tag">
+                            <div class="recipe-card-tag">
                                 ${
                                     toTitleCase(tag)
                                 }

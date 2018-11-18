@@ -10,11 +10,11 @@ export default function Header() {
                 headerCSS
             }
         </style>
-        <div className="header-row">
-            <div className="header-text">
+        <div class="header-row">
+            <div class="header-text">
                 What would you like to eat?
             </div>
-            <span className="header-icon-notification mdi mdi-bell-outline">
+            <span class="header-icon-notification mdi mdi-bell-outline">
             </span>
         </div>
         `
