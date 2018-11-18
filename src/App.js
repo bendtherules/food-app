@@ -1,49 +1,58 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-
 import Header from './components/Header/header';
 import Categories from './components/Categories';
 import Recipes from './components/Recipes';
 
-import { initAction } from './actions/initAction';
 
 import './App.css';
 
-class App extends Component {
+class App {
   static recipeURL = './recipes.json';
 
-  initAction = (data) => {
-    this.props.initAction(data);
+  constructor() {
+    this.data = undefined;
+    this.renderPromise = undefined;
+
+    this.renderPromise = (
+      this
+      .initialize()
+      .then(
+        () => this.render()
+      )
+    );
   }
 
-  componentDidMount() {
-    const initAction = this.initAction;
+  initialize() {
 
-    fetch(App.recipeURL)
-      .then(function (response) {
+    return fetch(App.recipeURL)
+      .then((response) => {
         return response.json();
       })
-      .then(function (dataJSON) {
-        initAction(dataJSON);
+      .then((dataJSON) => {
+        this.data = dataJSON;
       });
   }
 
   render() {
     return (
+      `
       <div className="App">
-        <Header />
-        <Categories />
-        <Recipes />
+        ${
+          Header()
+        }
+        ${
+          Categories({
+            categories: this.data.categories,
+          })
+        }
+        ${
+          Recipes({
+            recipes: this.data.recipes,
+          })
+        }
       </div>
+      `
     );
   }
 }
 
-const mapStateToProps = state => ({
-  data: state.data,
-});
-const mapDispatchToProps = dispatch => ({
-  initAction: (data) => dispatch(initAction(data)),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default (App);

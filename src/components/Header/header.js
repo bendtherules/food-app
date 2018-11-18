@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
-// import { connect } from 'react-redux';
-
-
-import './header.css';
+import headerCSS from './header.css';
 
 export default function Header() {
+    console.log(headerCSS);
+    
     return (
+        `
+        <style type="text/css" scoped>
+            ${
+                headerCSS
+            }
+        </style>
         <div className="header-row">
             <div className="header-text">
                 What would you like to eat?
@@ -13,5 +17,6 @@ export default function Header() {
             <span className="header-icon-notification mdi mdi-bell-outline">
             </span>
         </div>
-    )
+        `
+    );
 }

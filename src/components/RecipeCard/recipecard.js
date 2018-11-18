@@ -1,5 +1,3 @@
-import React, { Component } from 'react';
-
 import './recipecard.css';
 
 function toTitleCase(str) {
@@ -12,35 +10,37 @@ function toTitleCase(str) {
 
 export default function RecipeCard(props) {
     return (
+        `
         <div className="recipe-card" >
             <div className="recipe-card-top">
-                <img className="recipe-card-image" src={props.data.image} alt={props.data.name} />
+                <img className="recipe-card-image" src=${props.recipe.image} alt=${props.recipe.name} />
             </div>
             <div className="recipe-card-bottom">
                 <div className="recipe-card-desc">
                     <div className="recipe-card-logo-wrapper">
-                        <img className="recipe-card-logo" src={props.data.icon} alt={props.data.name} />
+                        <img className="recipe-card-logo" src=${props.recipe.icon} alt=${props.recipe.name} />
                     </div>
                     <div className="recipe-card-title-container">
                         <div className="recipe-card-title">
-                            {
-                                toTitleCase(props.data.name)
+                            ${
+                                toTitleCase(props.recipe.name)
                             }
                         </div>
                         <div className="recipe-card-rating">
-                            {
-                                new Array(props.data.rating).map(_useless => (
+                            ${
+                                new Array(props.recipe.rating).map(_useless => (
+                                    `
                                     <div className="recipe-card-star">
                                     </div>
+                                    `
                                 ))
                             }
                         </div>
                     </div>
                     <div className="recipe-card-price">
                         <div className="recipe-card-price-number">
-
-                            {
-                                `$${props.data.price}`
+                            ${
+                                `$${props.recipe.price}`
                             }
                         </div>
                         <div className="recipe-card-price-suffix">
@@ -49,18 +49,21 @@ export default function RecipeCard(props) {
                     </div>
                 </div>
                 <div className="recipe-card-tags">
-                    {
-                        props.data.tags.map(tag => (
+                    ${
+                        props.recipe.tags.map(tag => (
+                            `
                             <div className="recipe-card-tag">
-                                {
+                                ${
                                     toTitleCase(tag)
                                 }
                             </div>
+                            `
                         ))
                     }
 
                 </div>
             </div>
         </div>
-    )
+        `
+    );
 }
