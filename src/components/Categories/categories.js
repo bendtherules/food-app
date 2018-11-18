@@ -5,8 +5,8 @@ import './categories.css';
 function Categories(props) {
     return (
         `
-        <div class="categories-wrapper">
-            <div class="categories-inner">
+        <div class="swipable-outer">
+            <div class="swipable-inner">
             ${
                 props.categories.map((category) => (
                     CategoryCard({

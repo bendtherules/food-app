@@ -48,19 +48,20 @@ export default function RecipeCard(props) {
                         </div>
                     </div>
                 </div>
-                <div class="recipe-card-tags">
-                    ${
-                        props.recipe.tags.map(tag => (
-                            `
-                            <div class="recipe-card-tag">
-                                ${
-                                    toTitleCase(tag)
-                                }
-                            </div>
-                            `
-                        )).join('')
-                    }
-
+                <div class="recipe-card-tags swipable-outer">
+                    <div class="swipable-inner">
+                        ${
+                            props.recipe.tags.map(tag => (
+                                `
+                                <div class="recipe-card-tag">
+                                    ${
+                                        toTitleCase(tag)
+                                    }
+                                </div>
+                                `
+                            )).join('')
+                        }
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
-import './index.css';
 import App from './App';
+import './index.css';
 
 window.addEventListener("load", function () {
     const app = new App();

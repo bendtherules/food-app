@@ -12,3 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.swipable-outer {
+  width: 100%;
+  overflow: auto;
+}
+
+.swipable-inner {
+  /* width: auto; */
+  display: inline-flex;
+  flex-direction: row;
+}
