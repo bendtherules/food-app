@@ -11,7 +11,7 @@ function Recipes(props) {
                     RecipeCard({
                         recipe,
                     })
-                ))
+                )).join('')
             }
         </div>
         `

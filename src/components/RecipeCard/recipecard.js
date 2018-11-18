@@ -33,7 +33,7 @@ export default function RecipeCard(props) {
                                     <div class="recipe-card-star">
                                     </div>
                                     `
-                                ))
+                                )).join('')
                             }
                         </div>
                     </div>
@@ -58,7 +58,7 @@ export default function RecipeCard(props) {
                                 }
                             </div>
                             `
-                        ))
+                        )).join('')
                     }
 
                 </div>

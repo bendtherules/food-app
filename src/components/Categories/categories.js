@@ -12,7 +12,7 @@ function Categories(props) {
                     CategoryCard({
                         category,
                     })
-                ))
+                )).join('')
             }
             </div>
         </div>
