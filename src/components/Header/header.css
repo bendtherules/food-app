@@ -1,0 +1,13 @@
+.header-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 32px;
+    font-size: 24px;
+}
+
+.header-text {
+    text-align: left;
+    width: 60%;
+    font-weight: bold;
+}

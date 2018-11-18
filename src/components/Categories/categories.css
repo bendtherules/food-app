@@ -1,0 +1,10 @@
+.categories-wrapper {
+    width: 100%;
+    overflow: auto;
+}
+
+.categories-inner {
+    /* width: auto; */
+    display: inline-flex;
+    flex-direction: row;
+}

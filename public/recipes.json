@@ -1,0 +1,174 @@
+{
+  "categories": [
+    {
+      "name": "burger",
+      "image": "http://www.myiconfinder.com/uploads/iconsets/256-256-8a98392e8674eb71887ee57b861dd1c0-Burger.png",
+      "restaurants": 20
+    },
+    {
+      "name": "pizza",
+      "image": "http://icons.iconarchive.com/icons/sonya/swarm/256/Pizza-icon.png",
+      "restaurants": 43
+    },
+    {
+      "name": "taco",
+      "image": "https://image.flaticon.com/icons/png/128/129/129201.png",
+      "restaurants": 13
+    },
+    {
+      "name": "noodles",
+      "image": "http://www.myiconfinder.com/uploads/iconsets/256-256-22e427c0cdcb235e6639fa4f3ee8ac39-noodles.png",
+      "restaurants": 30
+    },
+    {
+      "name": "pasta",
+      "image": "https://cdn6.aptoide.com/imgs/8/8/6/886e30ce059746507dfd41ee5b590174_icon.png?w=256",
+      "restaurants": 29
+    }
+  ],
+  "recipes": [
+    {
+      "name": "burger king",
+      "image": "https://sifu.unileversolutions.com/image/en-AU/recipe-topvisual/2/1260-709/beef-burger-with-deep-fried-bacon-and-thousand-island-dressing-50247463.jpg",
+      "icon": "https://www.festisite.com/static/partylogo/img/logos/burger-king.png",
+      "price": 11,
+      "rating": 2,
+      "reviewsCount": 2,
+      "tags": [
+        "burger",
+        "fries",
+        "nuggets"
+      ]
+    },
+    {
+      "name": "starbucks",
+      "image": "https://images.financialexpress.com/2016/06/starbucks-reu-L.jpg",
+      "icon": "https://cdn.i.haymarketmedia.asia/?n=campaign-india%2Fcontent%2F20160517223434760254_starbucks.gif&h=570&w=855&q=100&v=20170226&c=1",
+      "price": 15,
+      "rating": 4,
+      "reviewsCount": 10,
+      "tags": [
+        "Espresso",
+        "Coffee Frappuccino",
+        "latte"
+      ]
+    },
+    {
+      "name": "Onesta",
+      "image": "https://b.zmtcdn.com/data/daily_menus/013/106013/c31e9610163a1c49864eff436ff84743.jpg",
+      "icon": "http://aroundmangalore.com/wp-content/uploads/2017/12/Onesta-Pizzeria-Mak-Mall-Kankanady-Mangalore.jpg",
+      "price": 15,
+      "rating": 3,
+      "reviewsCount": 11,
+      "tags": [
+        "burger",
+        "fries",
+        "nuggets"
+      ]
+    },
+    {
+      "name": "pizza hut",
+      "image": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/e/z/p54-15137566365a3a17dc61544.jpg?w=1200&q=100",
+      "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp4TjK1ZHifK-NBWazyWUPan1bmBrL3SiRyRi1Y7Eq7VY48dhe",
+      "price": 20,
+      "rating": 3,
+      "reviewsCount": 2,
+      "tags": [
+        "burger",
+        "fries",
+        "nuggets"
+      ]
+    },
+    {
+      "name": "little itali",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpO_7mc1zGnMlmXVKkvCWcHcy8v3-AQF8OZnWzCSwmRn4PKsXlqA",
+      "icon": "http://futurearchitectureplatform.org/media/applications/2018/01/06/Logo_Little_Italy.png",
+      "price": 25,
+      "rating": 4,
+      "reviewsCount": 4,
+      "tags": [
+        "burger",
+        "fries",
+        "nuggets"
+      ]
+    },
+    {
+      "name": "KFC",
+      "image": "https://www.joc.com/sites/default/files/field_feature_image/KFC_0.png",
+      "icon": "https://d3r623tes721q0.cloudfront.net/MEf_blgmN3xYpEGM3409ccd179f577fa5d5dc3bf1910f49959e9ae48/kentucky-fried-chicken-kfc-logo-3536_profile.gif",
+      "price": 30,
+      "rating": 5,
+      "reviewsCount": 12,
+      "tags": [
+        "burger",
+        "fries",
+        "nuggets"
+      ]
+    },
+    {
+      "name": "dominoss",
+      "image": "https://braziljournal.s3.amazonaws.com/covers/c7ca960f-87f8-0002-0003-9fd33b8cf00b.jpg?v=1533296530",
+      "icon": "https://bitcoinist.com/wp-content/uploads/2016/01/Dominos-Pizza.png",
+      "price": 10,
+      "rating": 4,
+      "reviewsCount": 17,
+      "tags": [
+        "burger",
+        "fries",
+        "nuggets"
+      ]
+    },
+    {
+      "name": "baskin robbins",
+      "image": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/a/y/p3449-144016592855d73028d03f9.jpg?w=1200&q=100",
+      "icon": "https://pbs.twimg.com/profile_images/973995484749721601/WZEpvJeD_400x400.jpg",
+      "price": 100,
+      "rating": 5,
+      "reviewsCount": 23,
+      "tags": [
+        "burger",
+        "fries",
+        "nuggets"
+      ]
+    },
+    {
+      "name": "taco bell",
+      "image": "https://patch.com/img/cdn20/getty/22917092/20180514/020547/styles/T800x600/public/processed_images/gettyimages-489586482-1526318734-6699.jpg",
+      "icon": "http://pbs.twimg.com/profile_images/861951322924474371/J4EGay3R_400x400.jpg",
+      "price": 13,
+      "rating": 4,
+      "reviewsCount": 16,
+      "tags": [
+        "burger",
+        "fries",
+        "nuggets"
+      ]
+    },
+    {
+      "name": "mainland china",
+      "image": "https://chandigarhx.com/wp-content/uploads/2017/11/mainland-china.jpg",
+      "icon": "https://pbs.twimg.com/profile_images/727050706281189376/dxjeJMe7_400x400.jpg",
+      "price": 50,
+      "rating": 2,
+      "reviewsCount": 9,
+      "tags": [
+        "burger",
+        "fries",
+        "nuggets"
+      ]
+    },
+    {
+      "name": "mac donald",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/0d/3c/2c/62/mcdonald-s.jpg",
+      "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUq41WW5X2pjhIosUzYNGsHWGZve-j4f5otvOM0uzwFct6KsOw",
+      "price": 20,
+      "rating": 3,
+      "reviewsCount": 200,
+      "tags": [
+        "burger",
+        "fries",
+        "nuggets"
+      ]
+    }
+  ]
+}
