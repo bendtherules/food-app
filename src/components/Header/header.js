@@ -5,11 +5,6 @@ export default function Header() {
     
     return (
         `
-        <style type="text/css" scoped>
-            ${
-                headerCSS
-            }
-        </style>
         <div class="header-row">
             <div class="header-text">
                 What would you like to eat?

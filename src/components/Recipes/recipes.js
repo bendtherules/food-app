@@ -5,7 +5,7 @@ import './recipes.css';
 function Recipes(props) {
     return (
         `
-        <div class="recipes-wrapper">
+        <div id="recipes-wrapper">
             ${
                 props.recipes.map((recipe) => (
                     RecipeCard({

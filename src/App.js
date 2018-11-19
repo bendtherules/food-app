@@ -1,7 +1,7 @@
 import Header from './components/Header/header';
 import Categories from './components/Categories';
 import Recipes from './components/Recipes';
-
+import SearchBox from './components/SearchBox';
 
 import './App.css';
 
@@ -38,6 +38,11 @@ class App {
       <div class="App">
         ${
           Header()
+        }
+        ${
+          SearchBox({
+            recipes: this.data.recipes,
+          })
         }
         ${
           Categories({
